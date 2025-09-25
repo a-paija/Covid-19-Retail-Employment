@@ -29,13 +29,20 @@ This project analyzes how the COVID-19 pandemic affected retail employment in th
 3. Causal Analysis
    - Applied Regression Discontinuity Design (RDD) around March 2020 to estimate COVID’s immediate effect.
   
-<h2>Insights</h2>
+<h2>Summarised Insights</h2>
 
 - Retail employment showed a sharp jump/drop around March 2020, consistent with pandemic disruptions.
 
 - Average weekly hours decreased post-COVID, reflecting reduced stability in retail jobs.
 
 - RDD analysis highlights a structural break in retail labor dynamics at the onset of COVID.
+
+<h2>Key Visualizations</h2>
+
+![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail1.png)
+![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail2.png)
+![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail3.png)
+![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail4.png)
 
 <h2>Data Source</h2>
 
