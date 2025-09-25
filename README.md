@@ -37,6 +37,8 @@ This project analyzes how the COVID-19 pandemic affected retail employment in th
 
 - RDD analysis highlights a structural break in retail labor dynamics at the onset of COVID.
 
+- Greater in-depth insights offered inside [submission](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/Data%20Translation%20Submission.html)
+
 <h2>Key Visualizations</h2>
 
 ![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail1.png)
