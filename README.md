@@ -1,7 +1,7 @@
 <h1>COVID-19 Impact on Retail Employment Analysis</h1>
 
 <h2>Description</h2>
-This project analyzes how the COVID-19 pandemic affected retail employment in the United States, using IPUMS CPS (Current Population Survey) microdata. The focus is on changes in total retail employment and average weekly hours worked before and after the onset of the pandemic in March 2020.
+This project analyzes how the COVID-19 pandemic affected retail employment in the United States, using IPUMS CPS (Current Population Survey) microdata. The focus is on changes in total retail employment and average weekly hours worked before and after the onset of the pandemic in March 2020. By utilising R's Visualization and Statistical capabilities, this project aims to answer and display the impacts of COVID-19 on Retail relative to other industries and more!
 
 <h2>Methods Used</h2>
 
