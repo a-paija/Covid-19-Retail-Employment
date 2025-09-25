@@ -5,22 +5,40 @@ This project analyzes how the COVID-19 pandemic affected retail employment in th
 
 <h2>Methods Used</h2>
 
-R Libraries:
+1. R Libraries:
+  - tidyverse – data wrangling and visualization
+  - ipumsr – importing IPUMS CPS extracts
+  - lubridate & zoo – handling dates and monthly time series
+  - fixest – regression analysis (optional extensions)
+2. Techniques:
+  - Data cleaning & transformation pipelines
+  - Weighted employment aggregation
+  - Time-series visualization
+  - Regression discontinuity design
 
-- tidyverse – data wrangling and visualization
+<h2>Key Steps in Analysis</h2>
 
-- ipumsr – importing IPUMS CPS extracts
+1. Data Cleaning
+   - Filtered CPS data to include only retail industry codes.
+   - Created pre- and post-COVID time markers.
+   - Constructed weighted employment measures.
+2. Exploratory Analysis
+   - Plotted total retail employment trends over time.
+   - Compared pre-COVID and post-COVID patterns.
+   - Examined average weekly hours worked.
+3. Causal Analysis
+   - Applied Regression Discontinuity Design (RDD) around March 2020 to estimate COVID’s immediate effect.
+  
+<h2>Insights</h2>
 
-- lubridate & zoo – handling dates and monthly time series
+- Retail employment showed a sharp jump/drop around March 2020, consistent with pandemic disruptions.
 
-- fixest – regression analysis (optional extensions)
+- Average weekly hours decreased post-COVID, reflecting reduced stability in retail jobs.
 
-Techniques:
+- RDD analysis highlights a structural break in retail labor dynamics at the onset of COVID.
 
-- Data cleaning & transformation pipelines
+<h2>Data Source</h2>
 
-- Weighted employment aggregation
+-IPUMS CPS (Current Population Survey): U.S. employment microdata (up to April 2022).
 
-- Time-series visualization
-
-- Regression discontinuity design
+-Retail industries were selected using specific industry codes (motor vehicles, furniture, grocery, clothing, etc.).
