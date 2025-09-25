@@ -54,6 +54,8 @@ This project analyzes how the COVID-19 pandemic affected retail employment in th
 
 <h2>Accessing the data</h2>
 
+Open the Onedrive file and download the CPS_00002.xml and CPS_00002.dat files
+
 NOTE: To load data, you must download both the extract's data and the DDI and also set the working directory to the folder with these files (or change the path below).
 
 if (!require("ipumsr")) stop("Reading IPUMS data into R requires the ipumsr package. It can be installed using the following command: install.packages('ipumsr')")
