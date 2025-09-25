@@ -51,3 +51,13 @@ This project analyzes how the COVID-19 pandemic affected retail employment in th
 -IPUMS CPS (Current Population Survey): U.S. employment microdata (up to April 2022).
 
 -Retail industries were selected using specific industry codes (motor vehicles, furniture, grocery, clothing, etc.).
+
+<h2>Accessing the data</h2>
+
+# NOTE: To load data, you must download both the extract's data and the DDI
+# and also set the working directory to the folder with these files (or change the path below).
+
+if (!require("ipumsr")) stop("Reading IPUMS data into R requires the ipumsr package. It can be installed using the following command: install.packages('ipumsr')")
+
+ddi <- read_ipums_ddi("cps_00002.xml")
+data <- read_ipums_micro(ddi)
