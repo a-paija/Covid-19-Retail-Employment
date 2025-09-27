@@ -54,7 +54,7 @@ This project analyzes how the COVID-19 pandemic affected retail employment in th
 
 <h2>Accessing the data</h2>
 
-Open this [Onedrive file](https://1drv.ms/f/c/29fff340824080b8/EjyyA1L9QaRKrMafD4q6xRgBWSoQd0Vklob7GPF4cgNWkQ?e=G3TXDo) and download the CPS_00002.xml and CPS_00002.dat files
+Download the[ CPS_00002.xml](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/cps_00002.xml) and [CPS_00002.dat](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/cps_00002.dat) files and save them to your working directory in R Studios.
 
 NOTE: To load data, you must download both the extract's data and the DDI and also set the working directory to the folder with these files (or change the path below).
 
