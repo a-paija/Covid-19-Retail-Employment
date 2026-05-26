@@ -29,8 +29,6 @@ Targeted analysis and full results can be found [here](https://github.com/a-paij
 
 ## 🟦 Data Structure & Initial Checks
 
-The dataset is derived from **IPUMS CPS microdata**, containing monthly employment records across U.S. industries through April 2022.
-
 Each observation represents an individual respondent, including:
 - Industry classification (used to isolate retail sectors)
 - Employment status
@@ -39,21 +37,15 @@ Each observation represents an individual respondent, including:
 
 Retail industries were filtered using standardized CPS industry codes (motor vehicles, grocery, clothing, furniture, etc.), and survey weights were applied to ensure nationally representative estimates.
 
-
-
 ## 🟦 Data Cleaning & Preparation (R)
 
-Before analysis, the dataset was cleaned and structured to ensure consistency and analytical accuracy.
-
-Key steps included:
+Steps included:
 - Filtering for retail industry observations only
 - Creating pre- and post-COVID indicators centered on March 2020
 - Constructing weighted employment measures using CPS sampling weights
 - Standardizing time variables for monthly time-series analysis
 
 These steps ensured the dataset could support both trend analysis and causal inference techniques.
-
-
 
 ## 🟩 Executive Summary
 
@@ -66,8 +58,6 @@ Key patterns:
 
 > **Core Insight:** COVID-19 did not just disrupt retail employment temporarily—it fundamentally altered workforce structure and labor utilization patterns.
 
-
-
 ## 🟨 Employment Trends & Labor Market Shock
 
 Time-series analysis shows a clear discontinuity in retail employment levels at the onset of the pandemic.
@@ -77,7 +67,6 @@ Time-series analysis shows a clear discontinuity in retail employment levels at 
 - Recovery is uneven and incomplete
 
 **Business Insight:** Retail employment is highly sensitive to external shocks, requiring stronger risk-aware workforce planning.
-
 
 
 ## 🟨 Labor Utilization & Weekly Hours
@@ -91,7 +80,6 @@ Average weekly hours provide insight into labor intensity beyond headcount.
 **Business Insight:** Firms responded by scaling down labor usage, not just employment.
 
 
-
 ## 🟧 Causal Impact Analysis (RDD)
 
 A Regression Discontinuity Design (RDD) was applied around March 2020.
@@ -102,11 +90,10 @@ A Regression Discontinuity Design (RDD) was applied around March 2020.
 
 **Business Insight:** The shock was abrupt, requiring adaptive labor strategies.
 
-
-
 ## 🟨 Key Visualizations
 
-![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail1.png)
-![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail2.png)
-![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail3.png)
-![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail4.png)
+<img src="images/retail1.png" width="700" height="550"/>
+<img src="images/retail2.png" width="700" height="550"/>
+<img src="images/retail3.png" width="700" height="550"/>
+<img src="images/retail4.png" width="700" height="550"/>
+
