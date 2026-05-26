@@ -1,5 +1,3 @@
-# 🟦 COVID-19 Impact on Retail Employment Analysis
-
 ## 🟦 Project Background
 
 The COVID-19 pandemic introduced an unprecedented disruption to the U.S. labor market, with the retail sector experiencing some of the most immediate and visible impacts. Despite the availability of large-scale employment data, understanding how workforce dynamics shifted—both in terms of employment levels and labor utilization—remains challenging without structured analysis.
