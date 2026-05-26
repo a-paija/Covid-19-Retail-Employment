@@ -71,17 +71,6 @@ Time-series analysis shows a clear discontinuity in retail employment levels at 
 **Business Insight:** Retail employment is highly sensitive to external shocks, requiring stronger risk-aware workforce planning.
 
 
-## 🟨 Labor Utilization & Weekly Hours
-
-Average weekly hours provide insight into labor intensity beyond headcount.
-
-- Weekly hours declined post-COVID
-- Indicates reduced scheduling and demand contraction
-- Adjustments occurred in both employment and hours
-
-**Business Insight:** Firms responded by scaling down labor usage, not just employment.
-
-
 ## 🟧 Causal Impact Analysis (RDD)
 
 A Regression Discontinuity Design (RDD) was applied around March 2020.
