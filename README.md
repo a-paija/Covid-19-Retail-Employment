@@ -1,66 +1,114 @@
-<h1>COVID-19 Impact on Retail Employment Analysis</h1>
+# 🟦 COVID-19 Impact on Retail Employment Analysis
 
-<h2>Description</h2>
+## 🟦 Project Background
 
-[This project](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/Data%20Translation%20Submission.html) analyzes how the COVID-19 pandemic affected retail employment in the United States, using IPUMS CPS (Current Population Survey) microdata. The focus is on changes in total retail employment and average weekly hours worked before and after the onset of the pandemic in March 2020. By utilising R's Visualization and Statistical capabilities, this project aims to answer and display the impacts of COVID-19 on Retail relative to other industries and more!
+The COVID-19 pandemic introduced an unprecedented disruption to the U.S. labor market, with the retail sector experiencing some of the most immediate and visible impacts. Despite the availability of large-scale employment data, understanding how workforce dynamics shifted—both in terms of employment levels and labor utilization—remains challenging without structured analysis.
 
-<h2>Methods Used</h2>
+This project analyzes **IPUMS CPS (Current Population Survey)** microdata to evaluate how retail employment and average weekly hours worked changed before and after the onset of COVID-19 in March 2020. The dataset spans multiple years of monthly labor force data, enabling a detailed view of workforce trends at a national level.
 
-1. R Libraries:
-  - tidyverse – data wrangling and visualization
-  - ipumsr – importing IPUMS CPS extracts
-  - lubridate & zoo – handling dates and monthly time series
-  - fixest – regression analysis (optional extensions)
-2. Techniques:
-  - Data cleaning & transformation pipelines
-  - Weighted employment aggregation
-  - Time-series visualization
-  - Regression discontinuity design
+Without structured analysis, it is difficult to answer critical questions such as:
+- How severely was retail employment impacted at the onset of COVID-19?
+- Did reduced employment come with changes in labor intensity (hours worked)?
+- Was the disruption temporary, or did it create a structural shift in retail labor dynamics?
+- How does retail compare to broader labor market trends during the same period?
 
-<h2>Key Steps in Analysis</h2>
+#### **Overall Goal: Quantify the immediate and structural impact of COVID-19 on retail employment and labor utilization to better understand workforce resilience and recovery patterns.**
 
-1. Data Cleaning
-   - Filtered CPS data to include only retail industry codes.
-   - Created pre- and post-COVID time markers.
-   - Constructed weighted employment measures.
-2. Exploratory Analysis
-   - Plotted total retail employment trends over time.
-   - Compared pre-COVID and post-COVID patterns.
-   - Examined average weekly hours worked.
-3. Causal Analysis
-   - Applied Regression Discontinuity Design (RDD) around March 2020 to estimate COVID’s immediate effect.
-  
-<h2>Summarised Insights</h2>
+This project transforms raw CPS microdata into actionable insights using **R for data processing, statistical modeling, and visualization**.
 
-- Retail employment showed a sharp jump/drop around March 2020, consistent with pandemic disruptions.
+- Visualizations highlight **when and how labor trends changed**
+- Statistical modeling explains **the magnitude and significance of those changes**
 
-- Average weekly hours decreased post-COVID, reflecting reduced stability in retail jobs.
+Together, they provide both **descriptive and causal insight**, moving beyond surface-level trends into measurable impact.
 
-- RDD analysis highlights a structural break in retail labor dynamics at the onset of COVID.
+> **Note:** Full methodology, regression outputs, and extended analysis are available in the final submission.
 
-- Greater in-depth insights offered inside [submission](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/Data%20Translation%20Submission.html)
 
-<h2>Key Visualizations</h2>
+
+Targeted analysis and full results can be found [here](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/Data%20Translation%20Submission.html)
+
+
+
+## 🟦 Data Structure & Initial Checks
+
+The dataset is derived from **IPUMS CPS microdata**, containing monthly employment records across U.S. industries through April 2022.
+
+Each observation represents an individual respondent, including:
+- Industry classification (used to isolate retail sectors)
+- Employment status
+- Weekly hours worked
+- Survey weights for population-level aggregation
+
+Retail industries were filtered using standardized CPS industry codes (motor vehicles, grocery, clothing, furniture, etc.), and survey weights were applied to ensure nationally representative estimates.
+
+
+
+## 🟦 Data Cleaning & Preparation (R)
+
+Before analysis, the dataset was cleaned and structured to ensure consistency and analytical accuracy.
+
+Key steps included:
+- Filtering for retail industry observations only
+- Creating pre- and post-COVID indicators centered on March 2020
+- Constructing weighted employment measures using CPS sampling weights
+- Standardizing time variables for monthly time-series analysis
+
+These steps ensured the dataset could support both trend analysis and causal inference techniques.
+
+
+
+## 🟩 Executive Summary
+
+Retail employment experienced a sharp structural disruption at the onset of COVID-19, with both employment levels and average weekly hours showing immediate and significant changes.
+
+Key patterns:
+- Sudden drop and volatility in employment levels around March 2020
+- Decline in average weekly hours, indicating reduced labor utilization
+- Evidence of a structural break in labor dynamics rather than a temporary fluctuation
+
+> **Core Insight:** COVID-19 did not just disrupt retail employment temporarily—it fundamentally altered workforce structure and labor utilization patterns.
+
+
+
+## 🟨 Employment Trends & Labor Market Shock
+
+Time-series analysis shows a clear discontinuity in retail employment levels at the onset of the pandemic.
+
+- Sharp decline in March 2020 followed by instability in subsequent months
+- Magnitude exceeds normal monthly variation
+- Recovery is uneven and incomplete
+
+**Business Insight:** Retail employment is highly sensitive to external shocks, requiring stronger risk-aware workforce planning.
+
+
+
+## 🟨 Labor Utilization & Weekly Hours
+
+Average weekly hours provide insight into labor intensity beyond headcount.
+
+- Weekly hours declined post-COVID
+- Indicates reduced scheduling and demand contraction
+- Adjustments occurred in both employment and hours
+
+**Business Insight:** Firms responded by scaling down labor usage, not just employment.
+
+
+
+## 🟧 Causal Impact Analysis (RDD)
+
+A Regression Discontinuity Design (RDD) was applied around March 2020.
+
+- Statistically significant structural break in employment and hours
+- Confirms changes are pandemic-driven, not trend-based
+- Validates a causal shift in retail labor dynamics
+
+**Business Insight:** The shock was abrupt, requiring adaptive labor strategies.
+
+
+
+## 🟨 Key Visualizations
 
 ![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail1.png)
 ![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail2.png)
 ![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail3.png)
 ![Retail](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/images/retail4.png)
-
-<h2>Data Source</h2>
-
--IPUMS CPS (Current Population Survey): U.S. employment microdata (up to April 2022).
-
--Retail industries were selected using specific industry codes (motor vehicles, furniture, grocery, clothing, etc.).
-
-<h2>Accessing the data</h2>
-
-Download the[ CPS_00002.xml](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/cps_00002.xml) and [CPS_00002.dat](https://github.com/a-paija/Covid-19-Retail-Employment/blob/main/cps_00002.dat) files and save them to your working directory in R Studios.
-
-NOTE: To load data, you must download both the extract's data and the DDI and also set the working directory to the folder with these files (or change the path below).
-
-if (!require("ipumsr")) stop("Reading IPUMS data into R requires the ipumsr package. It can be installed using the following command: install.packages('ipumsr')")
-
-ddi <- read_ipums_ddi("cps_00002.xml")
-
-data <- read_ipums_micro(ddi)
