@@ -49,6 +49,8 @@ These steps ensured the dataset could support both trend analysis and causal inf
 
 ## 🟩 Executive Summary
 
+<img src="images/retail3.png" width="700" height="550"/>
+
 Retail employment experienced a sharp structural disruption at the onset of COVID-19, with both employment levels and average weekly hours showing immediate and significant changes.
 
 Key patterns:
@@ -91,9 +93,4 @@ A Regression Discontinuity Design (RDD) was applied around March 2020.
 **Business Insight:** The shock was abrupt, requiring adaptive labor strategies.
 
 ## 🟨 Key Visualizations
-
-<img src="images/retail1.png" width="700" height="550"/>
-<img src="images/retail2.png" width="700" height="550"/>
-<img src="images/retail3.png" width="700" height="550"/>
-<img src="images/retail4.png" width="700" height="550"/>
 
