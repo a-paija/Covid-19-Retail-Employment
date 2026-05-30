@@ -15,11 +15,6 @@ The analysis is guided by three core questions:
 #### **Overall Goal:**
 Quantify the labor market impact of COVID-19 across employment levels, industry composition, and earnings to understand structural changes in workforce dynamics.
 
-This project transforms CPS microdata into actionable insights using **R (tidyverse, fixest, ggplot2)** for cleaning, visualization, and econometric analysis.
-
-- Visualizations identify **when structural breaks occurred**
-- Regression models estimate **magnitude and statistical significance of COVID effects**
-- Comparative analysis highlights **industry-level heterogeneity**
 
 ## 🟦 Key Results
 
