@@ -1,6 +1,8 @@
 ## 🟦 Project Background
 
-The COVID-19 pandemic caused widespread disruption across the U.S. economy, with the retail sector experiencing some of the most immediate and visible labor market impacts. While aggregate employment trends are available, understanding how COVID-19 reshaped employment, unemployment, and earnings requires structured, data-driven analysis.
+Analyzed U.S. labor market dynamics during COVID-19 using IPUMS CPS microdata (2019–April 2022) to quantify the pandemic’s impact on retail employment, unemployment, and earnings.
+
+This project applies time-series analysis, fixed-effects regression, and difference-in-differences (DiD) modeling in R to identify structural breaks, measure employment shocks, and compare industry-level impacts.
 
 This project uses **IPUMS Current Population Survey (CPS) microdata** to examine labor market changes from the pre-pandemic period through April 2022. The goal is to analyze how employment dynamics evolved across retail and non-retail industries and how income patterns shifted for workers during the pandemic.
 
@@ -19,20 +21,23 @@ This project transforms CPS microdata into actionable insights using **R (tidyve
 - Regression models estimate **magnitude and statistical significance of COVID effects**
 - Comparative analysis highlights **industry-level heterogeneity**
 
+## 🟦 Key Results
 
-
-## 🟦 Data Structure & Initial Setup
-
-The dataset is derived from **IPUMS CPS microdata**, covering U.S. labor force participants from 2019–April 2022.
-
-Each observation includes:
-- Employment status (employed/unemployed)
-- Industry classification (retail vs non-retail and sub-industries)
-- Demographic variables (age, race, citizenship)
-- Earnings and hours worked
-- Survey weights for population-level inference
+- Retail employment declined by approximately 1.03 million jobs following COVID-19 onset
+- Retail unemployment increased by approximately 1.27 million workers, with a sharp spike in April 2020
+- Probability of employment in retail decreased by 2.9 percentage points (statistically significant at 0.1% level)
+- Non-retail industries experienced larger absolute job losses (~11 million), but retail saw sharper relative declines
+- Significant shifts in weekly earnings and income volatility observed across industries
 
 Retail and industry groups were constructed using CPS industry codes, and time variables were standardized to monthly frequency for consistent trend analysis.
+
+## 🟦 Methodology
+
+- Processed CPS microdata using R (tidyverse, fixest, ggplot2)
+- Conducted time-series analysis to detect structural breaks in employment trends
+- Built fixed-effects regression models to estimate COVID impact on employment and unemployment
+- Applied difference-in-differences (DiD) to compare retail vs non-retail industry outcomes
+- Controlled for demographic and geographic factors (age, race, citizenship, state, time)
 
 ## 🟩 Executive Summary
 
@@ -51,7 +56,9 @@ Key findings:
 #### **Core Insight:**
 COVID-19 did not simply reduce employment—it reshaped **labor allocation, industry composition, and earnings distribution across the workforce**.
 
+## 🟩 Key Insight
 
+COVID-19 created a structural shift in labor markets—altering not only employment levels, but also workforce composition and income distribution. Retail experienced disproportionate relative disruption, while service sectors absorbed the largest absolute losses.
 
 ## 🟨 Retail Employment Impact (Time-Series Analysis)
 
@@ -167,8 +174,6 @@ COVID-19 affected not just employment levels, but also **income stability and wa
 - Potential autocorrelation in time-series models
 - Unobserved heterogeneity across industries and workers
 
-
-
 ## 🟩 Conclusion
 
 The COVID-19 pandemic created a **large, immediate, and structurally persistent shock** to the U.S. labor market.
@@ -181,8 +186,5 @@ While retail employment showed partial recovery over time, the sector experience
 - Changes in earnings distribution patterns
 
 However, the **services sector experienced even larger absolute employment losses**, highlighting uneven impacts across industries.
-
-#### **Final Insight:**
-COVID-19 reshaped not just how many people are working, but **where, how, and under what conditions they earn income**, revealing structural vulnerabilities in low-wage and frontline labor markets.
 
 
