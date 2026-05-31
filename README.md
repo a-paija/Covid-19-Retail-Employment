@@ -1,4 +1,4 @@
-## 🟦 Project Background
+## Project Background
 
 Analyzed U.S. labor market dynamics during COVID-19 using IPUMS CPS microdata (2019–April 2022) to quantify the pandemic’s impact on retail employment, unemployment, and earnings.
 
@@ -16,7 +16,7 @@ The analysis is guided by three core questions:
 Quantify the labor market impact of COVID-19 across employment levels, industry composition, and earnings to understand structural changes in workforce dynamics.
 
 
-## 🟦 Key Results
+## Key Results
 
 - Retail employment declined by approximately 1.03 million jobs following COVID-19 onset
 - Retail unemployment increased by approximately 1.27 million workers, with a sharp spike in April 2020
@@ -26,7 +26,7 @@ Quantify the labor market impact of COVID-19 across employment levels, industry 
 
 Retail and industry groups were constructed using CPS industry codes, and time variables were standardized to monthly frequency for consistent trend analysis.
 
-## 🟦 Methodology
+## Methodology
 
 - Processed CPS microdata using R (tidyverse, fixest, ggplot2)
 - Conducted time-series analysis to detect structural breaks in employment trends
@@ -34,7 +34,7 @@ Retail and industry groups were constructed using CPS industry codes, and time v
 - Applied difference-in-differences (DiD) to compare retail vs non-retail industry outcomes
 - Controlled for demographic and geographic factors (age, race, citizenship, state, time)
 
-## 🟩 Executive Summary
+## Executive Summary
 
 <img src="images/retail3.png" width="700" height="550"/>
 
@@ -51,11 +51,11 @@ Key findings:
 #### **Core Insight:**
 COVID-19 did not simply reduce employment—it reshaped **labor allocation, industry composition, and earnings distribution across the workforce**.
 
-## 🟩 Key Insight
+## Key Insight
 
 COVID-19 created a structural shift in labor markets—altering not only employment levels, but also workforce composition and income distribution. Retail experienced disproportionate relative disruption, while service sectors absorbed the largest absolute losses.
 
-## 🟨 Retail Employment Impact (Time-Series Analysis)
+## Retail Employment Impact (Time-Series Analysis)
 
 Retail employment trends show a clear structural break beginning in April 2020.
 
@@ -74,7 +74,7 @@ Retail employment is highly sensitive to external shocks, particularly those aff
 
 
 
-## 🟨 Pre vs Post COVID Employment Shifts
+## Pre vs Post COVID Employment Shifts
 
 A comparison of pre- and post-COVID trends reveals:
 
@@ -85,9 +85,7 @@ A comparison of pre- and post-COVID trends reveals:
 #### **Insight:**
 COVID-19 caused a permanent shift in the retail labor trajectory rather than a temporary disruption.
 
-
-
-## 🟧 Econometric Analysis: Employment Impact
+## Econometric Analysis: Employment Impact
 
 A fixed-effects regression model estimates the impact of COVID-19:
 
@@ -102,7 +100,7 @@ COVID-19 caused a statistically significant and immediate shock to retail labor 
 
 
 
-## 🟨 Individual-Level Employment Analysis
+## Individual-Level Employment Analysis
 
 After controlling for demographics and seasonality:
 
@@ -115,7 +113,7 @@ The employment shock persists even after accounting for demographic and geograph
 
 
 
-## 🟨 Retail vs Other Industries
+## Retail vs Other Industries
 
 ### Key Findings:
 - Both retail and non-retail sectors experienced employment declines
@@ -128,7 +126,7 @@ COVID-19 impacts were uneven across sectors, with services bearing the largest e
 
 
 
-## 🟧 Difference-in-Differences (Industry Comparison)
+## Difference-in-Differences (Industry Comparison)
 
 A DiD model comparing retail vs non-retail shows:
 
@@ -141,7 +139,7 @@ Retail was not the most affected in absolute terms, but its labor force experien
 
 
 
-## 🟨 Earnings & Income Distribution Changes
+## Earnings & Income Distribution Changes
 
 Earnings analysis shows:
 
@@ -155,7 +153,7 @@ COVID-19 affected not just employment levels, but also **income stability and wa
 
 
 
-## 🟥 Key Assumptions & Limitations
+## Key Assumptions & Limitations
 
 ### Key Assumptions:
 - Parallel trends assumption for DiD models
@@ -169,7 +167,7 @@ COVID-19 affected not just employment levels, but also **income stability and wa
 - Potential autocorrelation in time-series models
 - Unobserved heterogeneity across industries and workers
 
-## 🟩 Conclusion
+## Conclusion
 
 The COVID-19 pandemic created a **large, immediate, and structurally persistent shock** to the U.S. labor market.
 
